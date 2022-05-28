@@ -67,7 +67,6 @@ class vegetable {
   console.log(temp)
  */
 
-Object.Define_Property(This, "Age", 40)
-handleClick
+
 
 
