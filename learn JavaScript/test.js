@@ -20,7 +20,10 @@ else{
 the above condition will execute Else statement as variable 'number' is a falsy value as per javascript
 */
 
-/* Class example 1
+/* Class 
+
+example 1:
+
 class vegetable {
     constructor(name) {
       this.name = name
@@ -31,7 +34,7 @@ class vegetable {
   console.log(carrot.name)
 
 
-  Class example 2
+example 2:
 
   class Person {
     constructor(name, age) {
@@ -46,7 +49,7 @@ class vegetable {
   const solomon = new Person("Solomon", 24)
   console.log(solomon.greet())
 
-  Class example 3
+example 3:
 
   class thermostat {
     constructor(temp) {
@@ -66,6 +69,95 @@ class vegetable {
   temp = thermostat.temperature
   console.log(temp)
  */
+
+/* Getter & Setter
+
+Example 1:
+
+let user = {
+  get name() {
+    return this._name;
+  },
+
+  set name(value) {
+    if (value.length < 4) {
+      console.log("Name is too short, need at least 4 characters");
+      return;
+    }
+    this._name = value;
+  }
+};
+
+user.name = "Pete";
+console.log(user.name); // Pete
+
+user.name = ""; // Name is too short...
+
+Example 2:
+
+function User(name, birthday) {
+  this.name = name;
+  this.birthday = birthday;
+
+  // age is calculated from the current date and birthday
+  Object.defineProperty(this, "age", {
+    get() {
+      let todayYear = new Date().getFullYear();
+      return todayYear - this.birthday.getFullYear();
+    }
+  });
+}
+
+let john = new User("John", new Date(1992, 6, 1));
+
+console.log( john.birthday ); // birthday is available
+console.log( john.age );      // ...as well as the age */
+
+/* Constructors and Prototypes
+
+function Person(firstName, lastName, age, eyeColor) {
+  this.firstName = firstName
+  this.lastName = lastName
+  this.age = age
+  this.eyeColor = eyeColor
+  this.changeName = function (name) {
+    this.lastName = name
+  }
+}
+Person.prototype.nationality = "English"
+
+Person.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+}
+
+let myMother = new Person("John", "Doe", 55, "brown")
+myMother.changeName("Sam")
+const newArray = JSON.stringify(myMother) // Object.values(myMother)
+document.getElementById("container").innerHTML = array1
+console.log(myMother) 
+
+
+*/
+
+/* Sets: Sets are arrays with unique values
+const letters = new Set(["a","b","c"]);
+
+letters.add("a")
+letters.add("a")
+letters.add("d")
+letters.add("c")
+
+// List all Elements Method 1
+let text = "";
+letters.forEach (function(value) {
+  text += value;
+})
+// List all Elements Method 2
+let text = "";
+for (const x of letters.values()) {
+  text += x;
+}
+*/
 
 
 
