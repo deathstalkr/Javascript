@@ -159,6 +159,40 @@ for (const x of letters.values()) {
 }
 */
 
+/* Maps
+1. Maps are Directly iterable,
+2. Maps have a size property,
+3. Keys can be any datatype,
+4. Keys are ordered by insertion,
+5. Maps do not have default keys.
 
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+])
+
+fruits.set("peach", 100)
+fruits.set("melons", 600)
+
+console.log(fruits.get("apples"))
+console.log(fruits.size)
+console.log(fruits.delete("oranges"))
+console.log(fruits.has("oranges"))
+
+let text = "";
+fruits.forEach (function(value, key) {
+  text += `${key} = ${value}\n`
+})
+
+console.log(text)
+
+let newText = "";
+for (const x of fruits.entries()) {
+  newText += `${x}\n`
+}
+console.log(newText)
+
+*/
 
 
