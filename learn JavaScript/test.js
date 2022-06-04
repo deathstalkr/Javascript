@@ -195,4 +195,59 @@ console.log(newText)
 
 */
 
+/* Object Iterables
+let counter = 0;
+let limit = 5;
+const iteratorObjectProtocol = {
+  next: function() {
+    counter++
+    if (counter > limit)
+      return {
+        value: undefined,
+        done: true
+      }
+    return {
+      value: counter,
+      done: false
+    }
+  }
+}
 
+const myCustomObject = {
+  [Symbol.iterator]: function() {
+    return iteratorObjectProtocol
+  }
+}
+console.log([...myCustomObject]) // [1, 2]
+
+
+let n = 0
+const objectIterator = {
+  next: function() {
+    n += 10
+    if (n >= 100) return {
+      done: true
+    }
+    return {
+      value: n,
+      done: false
+    }
+  }
+}
+
+let myNumbers = {};
+
+// Make it Iterable
+myNumbers[Symbol.iterator] = function() {
+  return objectIterator
+}
+
+let text = ""
+for (const num of myNumbers) {
+  text += num + " "
+}
+console.log(text) */
+
+function* myGenerator() {
+  
+}
