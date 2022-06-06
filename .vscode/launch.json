@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "timeout": 20000,
-            "url": "http://127.0.0.1:5500/Chrome%20Extension/lead_tracker.html",
+            "url": "http://127.0.0.1:5500",
             "webRoot": "${workspaceFolder}"
         }
     ]

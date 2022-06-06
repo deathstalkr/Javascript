@@ -139,7 +139,7 @@ console.log(myMother)
 
 */
 
-/* Sets: Sets are arrays with unique values
+/* Sets: Sets is a collection with unique values
 const letters = new Set(["a","b","c"]);
 
 letters.add("a")
@@ -157,6 +157,9 @@ let text = "";
 for (const x of letters.values()) {
   text += x;
 }
+
+console.log(text)
+console.log(letters instanceof Set)
 */
 
 /* Maps
@@ -193,9 +196,18 @@ for (const x of fruits.entries()) {
 }
 console.log(newText)
 
+let text1 = 0
+for (const x of fruits.values()) {
+  text1 += x
+}
+console.log(text1)
+console.log(fruits instanceof Map)
+console.log(fruits.keys())
+
 */
 
 /* Object Iterables
+
 let counter = 0;
 let limit = 5;
 const iteratorObjectProtocol = {
@@ -246,8 +258,18 @@ let text = ""
 for (const num of myNumbers) {
   text += num + " "
 }
-console.log(text) */
+console.log(text)
+
 
 function* myGenerator() {
-  
+  yield 1
+  yield 2
+  yield 3
 }
+const myGen = myGenerator()
+
+console.log(myGen.next())
+console.log(myGen.next())
+console.log(myGen.next())
+console.log(myGen.next()) */
+
