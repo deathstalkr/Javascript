@@ -8,8 +8,8 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "timeout": 20000,
-            "url": "http://127.0.0.1:5500",
+            "timeout": 200000,
+            "url": "http://127.0.0.1:5500/learn%20JavaScript/test.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

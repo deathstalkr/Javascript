@@ -273,3 +273,20 @@ console.log(myGen.next())
 console.log(myGen.next())
 console.log(myGen.next()) */
 
+/* Import and Export in JS
+// import subtract from "./ExportFunction.js"
+// const sub = subtract(5,2)
+// console.log(sub)
+
+//import { bar, capitaliseString, foo } from "./ExportFunction.js"
+import * as importObject from "./ExportFunction.js"
+
+const cap = importObject.capitaliseString("johnson")
+
+console.log(importObject) 
+
+console.log(cap)
+
+const conCat = importObject.bar + importObject.foo
+
+console.log(conCat) */
