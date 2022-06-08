@@ -276,17 +276,17 @@ console.log(myGen.next()) */
 /* Import and Export in JS
 // import subtract from "./ExportFunction.js"
 // const sub = subtract(5,2)
-// console.log(sub)
+// console.log("🚀 ~ file: test.js ~ line 277 ~ sub", sub)
 
 //import { bar, capitaliseString, foo } from "./ExportFunction.js"
 import * as importObject from "./ExportFunction.js"
 
 const cap = importObject.capitaliseString("johnson")
 
-console.log(importObject) 
+// console.log("🚀 ~ file: test.js ~ line 285 ~ cap", cap)
 
-console.log(cap)
+// console.log("🚀 ~ file: test.js ~ line 285 ~ importObject", importObject)
 
 const conCat = importObject.bar + importObject.foo
-
-console.log(conCat) */
+// console.log("🚀 ~ file: test.js ~ line 291 ~ conCat", conCat)
+ */

@@ -9,4 +9,5 @@ const capitaliseString = (string) => {
 export { capitaliseString }
 
 export const foo = "bar"
+console.log("🚀 ~ file: ExportFunction.js ~ line 12 ~ foo", foo)
 export const bar = "foo"
