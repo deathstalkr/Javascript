@@ -1,4 +1,4 @@
-/* Truthy and falsy values
+Truthy and falsy values
 Any of the stuffs other than the following values are considered as falsy values in javascript:
 1. false
 2. 0
@@ -17,12 +17,11 @@ else{
     //do nothing
 }
 
-the above condition will execute Else statement as variable 'number' is a falsy value as per javascript
-*/
+//the above condition will execute Else statement as variable 'number' is a falsy value as per javascript
 
-/* Class 
+//Class 
 
-example 1:
+//example 1:
 
 class vegetable {
     constructor(name) {
@@ -34,7 +33,7 @@ class vegetable {
   console.log(carrot.name)
 
 
-example 2:
+//example 2:
 
   class Person {
     constructor(name, age) {
@@ -49,7 +48,7 @@ example 2:
   const solomon = new Person("Solomon", 24)
   console.log(solomon.greet())
 
-example 3:
+//example 3:
 
   class thermostat {
     constructor(temp) {
@@ -68,11 +67,10 @@ example 3:
   thermostat.temperature = 10
   temp = thermostat.temperature
   console.log(temp)
- */
 
-/* Getter & Setter
+//Getter & Setter
 
-Example 1:
+//Example 1:
 
 let user = {
   get name() {
@@ -93,7 +91,7 @@ console.log(user.name); // Pete
 
 user.name = ""; // Name is too short...
 
-Example 2:
+//Example 2:
 
 function User(name, birthday) {
   this.name = name;
@@ -113,7 +111,7 @@ let john = new User("John", new Date(1992, 6, 1));
 console.log( john.birthday ); // birthday is available
 console.log( john.age );      // ...as well as the age */
 
-/* Constructors and Prototypes
+//Constructors and Prototypes
 
 function Person(firstName, lastName, age, eyeColor) {
   this.firstName = firstName
@@ -136,10 +134,7 @@ const newArray = JSON.stringify(myMother) // Object.values(myMother)
 document.getElementById("container").innerHTML = array1
 console.log(myMother) 
 
-
-*/
-
-/* Sets: Sets is a collection with unique values
+//Sets: Sets is a collection with unique values
 const letters = new Set(["a","b","c"]);
 
 letters.add("a")
@@ -160,9 +155,8 @@ for (const x of letters.values()) {
 
 console.log(text)
 console.log(letters instanceof Set)
-*/
 
-/* Maps
+//Maps
 1. Maps are Directly iterable,
 2. Maps have a size property,
 3. Keys can be any datatype,
@@ -204,9 +198,7 @@ console.log(text1)
 console.log(fruits instanceof Map)
 console.log(fruits.keys())
 
-*/
-
-/* Object Iterables
+//Object Iterables
 
 let counter = 0;
 let limit = 5;
@@ -273,12 +265,12 @@ console.log(myGen.next())
 console.log(myGen.next())
 console.log(myGen.next()) */
 
-/* Import and Export in JS
-// import subtract from "./ExportFunction.js"
-// const sub = subtract(5,2)
+// Import and Export in JS
+import subtract from "./ExportFunction.js"
+const sub = subtract(5,2)
 // console.log("🚀 ~ file: test.js ~ line 277 ~ sub", sub)
 
-//import { bar, capitaliseString, foo } from "./ExportFunction.js"
+import { bar, capitaliseString, foo } from "./ExportFunction.js"
 import * as importObject from "./ExportFunction.js"
 
 const cap = importObject.capitaliseString("johnson")
@@ -289,4 +281,3 @@ const cap = importObject.capitaliseString("johnson")
 
 const conCat = importObject.bar + importObject.foo
 // console.log("🚀 ~ file: test.js ~ line 291 ~ conCat", conCat)
- */
